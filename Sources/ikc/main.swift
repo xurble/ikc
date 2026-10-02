@@ -1,5 +1,7 @@
 import Foundation
-import IKCCore
+#if SWIFT_PACKAGE
+  import IKCCore
+#endif
 
 do {
   let command = try IKCCommand(arguments: Array(CommandLine.arguments.dropFirst()))

@@ -1,0 +1,28 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+		AA0000000000000000000001 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2650; TargetAttributes = {AA0000000000000000000002 = {CreatedOnToolsVersion = 26.5; ProvisioningStyle = Automatic; SystemCapabilities = {com.apple.Keychain = {enabled = 1; }; }; }; }; }; buildConfigurationList = AA0000000000000000000003; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = AA0000000000000000000004; preferredProjectObjectVersion = 77; productRefGroup = AA0000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (AA0000000000000000000002); };
+		AA0000000000000000000002 = {isa = PBXNativeTarget; buildConfigurationList = AA0000000000000000000006; buildPhases = (AA0000000000000000000007, AA0000000000000000000008, AA0000000000000000000009); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (AA000000000000000000000A); name = ikc; productName = ikc; productReference = AA000000000000000000000B; productType = "com.apple.product-type.application"; };
+		AA0000000000000000000004 = {isa = PBXGroup; children = (AA000000000000000000000A, AA000000000000000000000C, AA0000000000000000000005); sourceTree = "<group>"; };
+		AA0000000000000000000005 = {isa = PBXGroup; children = (AA000000000000000000000B); name = Products; sourceTree = "<group>"; };
+		AA0000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000000000000000000008 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000000000000000000009 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA000000000000000000000A = {isa = PBXFileSystemSynchronizedRootGroup; path = Sources; sourceTree = "<group>"; };
+		AA000000000000000000000B = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000000000000000000000C = {isa = PBXGroup; children = (AA000000000000000000000D, AA000000000000000000000E, AA000000000000000000000F); path = Config; sourceTree = "<group>"; };
+		AA000000000000000000000D = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		AA000000000000000000000E = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.example.xcconfig; sourceTree = "<group>"; };
+		AA000000000000000000000F = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ikc.entitlements; sourceTree = "<group>"; };
+		AA0000000000000000000010 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Debug; };
+		AA0000000000000000000011 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Release; };
+		AA0000000000000000000012 = {isa = XCBuildConfiguration; baseConfigurationReference = AA000000000000000000000D; buildSettings = {CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleName = ikc; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities"; INFOPLIST_KEY_LSUIElement = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_NAME = ikc; SKIP_INSTALL = NO; SUPPORTED_PLATFORMS = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_VERSION = 6.0; }; name = Debug; };
+		AA0000000000000000000013 = {isa = XCBuildConfiguration; baseConfigurationReference = AA000000000000000000000D; buildSettings = {CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleName = ikc; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities"; INFOPLIST_KEY_LSUIElement = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_NAME = ikc; SKIP_INSTALL = NO; SUPPORTED_PLATFORMS = macosx; SWIFT_VERSION = 6.0; }; name = Release; };
+		AA0000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (AA0000000000000000000010, AA0000000000000000000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AA0000000000000000000006 = {isa = XCConfigurationList; buildConfigurations = (AA0000000000000000000012, AA0000000000000000000013); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = AA0000000000000000000001;
+}

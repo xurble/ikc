@@ -1,0 +1,9 @@
+// Shared build settings safe to commit.
+
+PRODUCT_BUNDLE_IDENTIFIER = com.example.ikc
+DEVELOPMENT_TEAM =
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_ENTITLEMENTS = Config/ikc.entitlements
+ENABLE_HARDENED_RUNTIME = YES
+
+#include? "Local.xcconfig"
