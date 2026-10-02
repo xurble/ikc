@@ -18,7 +18,7 @@ Anyone who can run commands as your logged-in macOS user can invoke this executa
 
 Apple requires an app-like bundle with a provisioning profile for the Keychain access group entitlement. The `ikc.xcodeproj` target builds the command-line executable inside `ikc.app`, enables Keychain Sharing and hardened runtime, and uses Xcode's automatic signing. Enable iCloud Passwords & Keychain for the signed-in macOS user.
 
-Keep your Apple Developer account password and signing private key in Xcode and Keychain. Like Overplay, this repository commits a blank example signing config and ignores your populated local config. Never put developer credentials or profiles in GitHub Actions secrets for this project; CI only runs Swift package tests.
+Keep your Apple Developer account password and signing private key in Xcode and Keychain. This repository commits a blank example signing config and ignores your populated local config. Never put developer credentials or profiles in GitHub Actions secrets for this project; CI only runs Swift package tests.
 
 ```sh
 cp Config/Local.example.xcconfig Config/Local.xcconfig
