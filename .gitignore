@@ -4,6 +4,7 @@ build/
 DerivedData/
 *.xcuserstate
 xcuserdata/
+ikc.xcodeproj/project.xcworkspace/
 .DS_Store
 Config/Local.xcconfig
 .env

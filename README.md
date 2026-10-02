@@ -26,6 +26,8 @@ cp Config/Local.example.xcconfig Config/Local.xcconfig
 
 Edit `Config/Local.xcconfig` locally. Set `DEVELOPMENT_TEAM` to your Team ID and `PRODUCT_BUNDLE_IDENTIFIER` to a unique bundle identifier. Sign in to your developer account in Xcode > Settings > Accounts, then open `ikc.xcodeproj` and build the `ikc` scheme. Xcode manages the development certificate and provisioning profile. The local config is ignored by Git; check `git status` before committing.
 
+Set the Team ID in `Local.xcconfig`, not Xcode's Signing & Capabilities Team picker. The picker can write the ID into the tracked `project.pbxproj` file. If you use it, remove the `DEVELOPMENT_TEAM` overrides from that file before committing; the local config still supplies the setting.
+
 ```sh
 swift test
 xcodebuild -project ikc.xcodeproj -scheme ikc -configuration Release \
