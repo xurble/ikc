@@ -1,0 +1,14 @@
+.build/
+build/
+.swiftpm/
+.DS_Store
+.env
+.env.*
+*.provisionprofile
+*.mobileprovision
+*.p12
+*.p8
+*.pfx
+*.pem
+*.key
+*.cer
