@@ -35,6 +35,16 @@ xcodebuild -project ikc.xcodeproj -scheme ikc -configuration Release \
 ./build/DerivedData/Build/Products/Release/ikc.app/Contents/MacOS/ikc probe
 ```
 
+For a shorter command, keep the signed app bundle in place and symlink its executable from a directory on your `PATH`:
+
+```sh
+mkdir -p "$HOME/.local/bin"
+ln -s "$PWD/build/DerivedData/Build/Products/Release/ikc.app/Contents/MacOS/ikc" "$HOME/.local/bin/ikc"
+ikc probe
+```
+
+Add `$HOME/.local/bin` to `PATH` if your shell does not already include it. The symlink is only a launcher; the app bundle and its embedded provisioning profile must stay together.
+
 The bundle identifier must remain the same on every Mac that needs the synced items. Build and sign the same bundle identifier and access group on each Mac. Run the executable from inside its signed `.app` bundle; moving the executable out loses the provisioning profile context. Do not commit certificates, profiles, or signed builds.
 
 To distribute the helper, use Xcode's Product > Archive, then Organizer > Distribute App > Developer ID. Xcode can submit the archive for notarization. This requires a Developer ID signing identity and a suitable distribution provisioning profile. Notarization is for distribution; the synced Keychain behavior still depends on a valid signature, profile, entitlements, and the user's iCloud Keychain settings. Test the distributed build's `probe` command before using it with real secrets.
